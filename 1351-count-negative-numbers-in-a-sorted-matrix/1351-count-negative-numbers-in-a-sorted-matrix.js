@@ -8,8 +8,8 @@ var countNegatives = function(grid) {
         for(item of array){
             if(item<0){
                 result+=1;
-            }
-        }
-    }
-    return result
+            };
+        };
+    };
+    return result;
 };
