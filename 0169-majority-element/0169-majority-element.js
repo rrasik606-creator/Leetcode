@@ -3,20 +3,20 @@
  * @return {number}
  */
 var majorityElement = function(nums) {
-    let candidate = 0;
+    let result = 0;
     let count = 0;
 
     for (let num of nums) {
         if (count === 0) {
-            candidate = num;
+            result = num;
         }
 
-        if (num === candidate) {
+        if (num === result) {
             count++;
         } else {
             count--;
         }
     }
 
-    return candidate;
+    return result;
 };
